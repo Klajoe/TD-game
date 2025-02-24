@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #333;
+}
+canvas {
+  display: block;
+}
+
+/* Sol üstte upgrade butonları */
+#buttons {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 1000;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+#buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+.price {
+  margin-left: 5px;
+  font-size: 12px;
+  display: inline-block;
+  width: 30px;
+}
+
+/* 10x butonları için stil */
+.tenx {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Görevler paneli */
+#missions {
+  position: fixed;
+  left: 10px;
+  top: 170px;
+  z-index: 1000;
+  color: white;
+  font-family: Arial, sans-serif;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Özel yetenek butonu – yuvarlak */
+#specialAbility {
+  position: fixed;
+  left: 10px;
+  top: 300px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffcc00;
+  border: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+/* Sağ üstte bilgi panelleri */
+#balance, #health, #levelInfo, #income {
+  position: fixed;
+  right: 10px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+#balance { top: 10px; }
+#health { top: 50px; }
+#levelInfo { top: 90px; }
+#income { top: 130px; }
+
+/* Sağ tarafta Can Al ve Yatırım butonları */
+#buyHealth, #invest {
+  position: fixed;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+#buyHealth {
+  top: 170px;
+  background: #28a745;
+}
+#invest {
+  top: 210px;
+  background: #ff6600;
+}
+
+/* New Game Butonu */
+#newGame {
+  position: fixed;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 20px;
+  z-index: 2000;
+  display: none;
+  cursor: pointer;
+}
